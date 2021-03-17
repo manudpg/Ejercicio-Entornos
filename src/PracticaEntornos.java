@@ -189,5 +189,184 @@ public class PracticaEntornos {
 	
 	
 	
+	static void preguntasComunes() {
+
+		System.out.println(" ¿ Que estudias ?");
+
+		System.out.println("\n\tElija como quieres contestar : \n\t\t[1] Me gustaria estudiarte a ti ."
+				+ "\n\t\t[2] No estudio no me hace falta ."
+				+ "\n\t\t[3] Estudio informatica ¿ y tu ? ."
+				+ "\n\t\t[4] Trabajo en el CERN .");
+		System.out.print("\nHaga su eleccion : ");
+
+		eleccion = scanner.nextLine();
+
+		if (eleccion.equals("1")) {
+
+			contador += 0;
+		}
+
+		else if (eleccion.equals("2")) {
+
+			contador -= 1;
+		}
+		else if (eleccion.equals("3")) {
+
+			contador += 1;
+		}
+
+		else if(eleccion.equals("4")) {
+
+
+			contador += 2;
+		}
+
+		else {
+
+			contador -=5;
+		}
+
+		System.out.println(" ¿ Cuales son tus aficiones ?");
+
+		System.out.println("\n\tElija como quieres contestar : \n\t\t[1] Disfrutar de una buena compañia ."
+				+ "\n\t\t[2] Trabajar mi fisico ."
+				+ "\n\t\t[3] Me gusta el deporte y estar con mis amigos ."
+				+ "\n\t\t[4] Estudiar y culturizarme .");
+		System.out.print("\nHaga su eleccion : ");
+
+		eleccion = scanner.nextLine();
+
+		if (eleccion.equals("1")) {
+
+			contador += 1;
+		}
+
+		else if (eleccion.equals("2")) {
+
+			contador += 0;
+		}
+		else if (eleccion.equals("3")) {
+
+			contador += 2;
+		}
+
+		else if(eleccion.equals("4")) {
+
+
+			contador -= 1;
+		}
+
+		else {
+
+			contador -=5;
+		}
+		System.out.println(" ¿ Que planes de futuro tienes  ?");
+
+		System.out.println("\n\tElija como quieres contestar : \n\t\t[1] A corto plazo disfrutar contigo ."
+				+ "\n\t\t[2] Ser el mejor ."
+				+ "\n\t\t[3] Formarme profesionalmente y buscar una estabilidad ."
+				+ "\n\t\t[4] Crear mi propia empresa .");
+		System.out.print("\nHaga su eleccion : ");
+
+		eleccion = scanner.nextLine();
+
+		if (eleccion.equals("1")) {
+
+			contador += 1;
+		}
+
+		else if (eleccion.equals("2")) {
+
+			contador -= 1;
+		}
+		else if (eleccion.equals("3")) {
+
+			contador += 2;
+		}
+
+		else if(eleccion.equals("4")) {
+
+
+			contador += 0;
+		}
+
+		else {
+
+			contador -=5;
+		}
+
+		System.out.println(" ¿ Cual es tu mayor virtud ?");
+
+		System.out.println("\n\tElija como quieres contestar : \n\t\t[1] El don de gentes ."
+				+ "\n\t\t[2] Todas ."
+				+ "\n\t\t[3] La empatia ."
+				+ "\n\t\t[4] Mi capacidad analitica .");
+		System.out.print("\nHaga su eleccion : ");
+
+		eleccion = scanner.nextLine();
+
+		if (eleccion.equals("1")) {
+
+			contador += 1;
+		}
+
+		else if (eleccion.equals("2")) {
+
+			contador -= 1;
+		}
+		else if (eleccion.equals("3")) {
+
+			contador += 2;
+		}
+
+		else if(eleccion.equals("4")) {
+
+
+			contador += 0;
+		}
+
+		else {
+
+			contador -=5;
+		}
+
+		System.out.println(" ¿ Cual consideras tu mayor defecto ?");
+
+		System.out.println("\n\tElija como quieres contestar : \n\t\t[1] A veces peco de ser demasiado sincero ."
+				+ "\n\t\t[2] Ninguno ."
+				+ "\n\t\t[3] A veces soy muy inseguro ."
+				+ "\n\t\t[4] Centrarme demasiado en el trabajo .");
+		System.out.print("\nHaga su eleccion : ");
+
+		eleccion = scanner.nextLine();
+
+		if (eleccion.equals("1")) {
+
+			contador += 2;
+		}
+
+		else if (eleccion.equals("2")) {
+
+			contador -= 1;
+		}
+		else if (eleccion.equals("3")) {
+
+			contador += 0;
+		}
+
+		else if(eleccion.equals("4")) {
+
+
+			contador += 1;
+		}
+
+		else {
+
+			contador -=5;
+		}
+	}
+	
+	
+	
 	
 }
