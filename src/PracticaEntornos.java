@@ -3,8 +3,7 @@
 public class PracticaEntornos {
 
 	public static void main(String[] args) {
-		
-		
+			
 		boolean ejecucion = true;
 
 		while(ejecucion == true) {
