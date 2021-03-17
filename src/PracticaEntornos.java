@@ -202,4 +202,201 @@ public class PracticaEntornos {
 			contador -=5;
 		}
 	}
+	static void preguntasPicantes() {
+
+		System.out.println(" ¿ Como te gustan las mujeres ? ");
+
+		System.out.println("\n\tElija como quieres contestar : "
+				+ "\n\t\t[1] Mirate al espejo y hazte una idea."
+				+ "\n\t\t[2] Me gustan exlosivas, con un buen culazo ."
+				+ "\n\t\t[3] Me fijo en todo, pero, pero la personalidad me parece importante ."
+				+ "\n\t\t[4] Que puedan mantener una conversacion interesante .");
+		System.out.print("\nHaga su eleccion : ");
+
+		eleccion = scanner.nextLine();
+
+		if (eleccion.equals("1")) {
+
+			contador += 1;
+
+		}
+
+		else if (eleccion.equals("2")) {
+
+			contador -= 1;
+
+		}
+		else if (eleccion.equals("3")) {
+
+			contador += 2;
+
+		}
+
+		else if(eleccion.equals("4")) {
+
+			contador += 0;
+
+		}
+
+		else {
+
+			contador -=5;
+		}
+
+		System.out.println(" ¿ Cual es la mayor locura que has hecho ? ");
+
+		System.out.println("\n\tElija como quieres contestar : "
+				+ "\n\t\t[1] Todavia no la hecho ;) ."
+				+ "\n\t\t[2] Hago muchas locuras pero si quieres las podemos superar ."
+				+ "\n\t\t[3] Soy un chico bastante formal y no suelo hacer muchas locuras ."
+				+ "\n\t\t[4] Las locuras son de gente loca y eso se considera una enfermedad .");
+		System.out.print("\nHaga su eleccion : ");
+
+		eleccion = scanner.nextLine();
+
+		if (eleccion.equals("1")) {
+
+			contador += 2;
+
+		}
+
+		else if (eleccion.equals("2")) {
+
+			contador += 1;
+
+		}
+		else if (eleccion.equals("3")) {
+
+			contador += 0;
+
+		}
+
+		else if(eleccion.equals("4")) {
+
+			contador -= 1;
+
+		}
+
+		else {
+
+			contador -=5;
+		}
+
+		System.out.println(" ¿ Que adjetivos te definen mejor respecto al sexo ? ");
+
+		System.out.println("\n\tElija como quieres contestar :"
+				+ "\n\t\t[1] Jugueton ."
+				+ "\n\t\t[2] El puto amo ."
+				+ "\n\t\t[3] Cuidadoso y cariÃ±oso ."
+				+ "\n\t\t[4] Preciso y calculador .");
+		System.out.print("\nHaga su eleccion : ");
+
+		eleccion = scanner.nextLine();
+
+		if (eleccion.equals("1")) {
+
+			contador += 0;
+
+		}
+
+		else if (eleccion.equals("2")) {
+
+			contador -= 1;
+
+		}
+		else if (eleccion.equals("3")) {
+
+			contador += 1;
+
+		}
+
+		else if(eleccion.equals("4")) {
+
+			contador += 2;
+
+		}
+
+		else {
+
+			contador -=5;
+		}
+
+		System.out.println(" ¿ Tendrias sexo en la primera cita ? ");
+
+		System.out.println("\n\tElija como quieres contestar :"
+				+ "\n\t\t[1] Compruebalo tu misma ."
+				+ "\n\t\t[2] Sin sexo no tendria una cita ."
+				+ "\n\t\t[3] Me gusta que las cosas fluyan ."
+				+ "\n\t\t[4] Siempre que estimule mi mente .");
+		System.out.print("\nHaga su eleccion : ");
+
+		eleccion = scanner.nextLine();
+
+		if (eleccion.equals("1")) {
+
+			contador += 0;
+
+		}
+
+		else if (eleccion.equals("2")) {
+
+			contador += 1;
+
+		}
+		else if (eleccion.equals("3")) {
+
+			contador += 2;
+
+		}
+
+		else if(eleccion.equals("4")) {
+
+			contador -= 1;
+
+		}
+
+		else {
+
+			contador -=5;
+		}
+
+		System.out.println(" ¿ Que es lo que mas te gusta en el contexto sexual ? ");
+
+		System.out.println("\n\tElija como quieres contestar :"
+				+ "\n\t\t[1] El propio contexto ."
+				+ "\n\t\t[2] Que me aguante el ritmo ."
+				+ "\n\t\t[3] Conectar emocionalmente con la otra persona ."
+				+ "\n\t\t[4] Que la experiencia me enriquezca  .");
+		System.out.print("\nHaga su eleccion : ");
+
+		eleccion = scanner.nextLine();
+
+		if (eleccion.equals("1")) {
+
+			contador += 2;
+
+		}
+
+		else if (eleccion.equals("2")) {
+
+			contador -= 1;
+
+		}
+		else if (eleccion.equals("3")) {
+
+			contador += 1;
+
+		}
+
+		else if(eleccion.equals("4")) {
+
+			contador += 0;
+
+		}
+
+		else {
+
+			contador -=5;
+		}
+	}
 }
