@@ -2,6 +2,12 @@
 
 public class PracticaEntornos {
 
+	static int contador = 0;
+	static Scanner scanner = new Scanner(System.in);
+	static String ejecutar;
+	static String eleccion;
+	static boolean salir = false;
+	
 	public static void main(String[] args) {
 			
 		boolean ejecucion = true;
@@ -161,6 +167,7 @@ public class PracticaEntornos {
 					System.out.println("Natasha no sabe ni que decir llevaba soñando con alguien como tu toda su vida \n su nota ha sido: 10/10");
 				}
 
+			}
 
 
 				else if ( ejecutar.equals("2")) {
@@ -175,7 +182,6 @@ public class PracticaEntornos {
 
 					System.out.println("opcion no disponible. Introduzca una correcta.");
 				}
-			}
 		}		
 	}
 	
