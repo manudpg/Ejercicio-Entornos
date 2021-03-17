@@ -3,9 +3,183 @@
 public class PracticaEntornos {
 
 	public static void main(String[] args) {
-
 		
+		
+		boolean ejecucion = true;
+
+		while(ejecucion == true) {
+
+			contador = 0;
+
+			System.out.println();
+			cabecera();
+
+			ejecutar = scanner.nextLine();
+
+			if ( ejecutar.equals("1")) {
+
+				System.out.println("Hola mi nombre es Natasha . Encantada de conocerte");
+
+				System.out.println(" \nComo quiere reaccionar :  \n\n\t[1] Mostrarte nervioso y dubitativo . \t\t\t\t[2] Hacer un cumplido . \n\t[3] Presentarse respetuosamente ."
+						+ "\t\t[4] Hacerse el chulo .");
+
+				ejecutar = scanner.nextLine();
+
+				if(ejecutar.equals("1")) {
+
+					System.out.println(" Como veo que tienes poca sangre calentemos un poco el ambiente ");
+					System.out.println(" Seras capaz de resolver mis preguntas mas intimas sin combulsionar en el intento ");
+					System.out.println();
+					preguntasPicantes();
+				}
+
+				else if(ejecutar.equals("2")) {
+
+
+					System.out.println(" Bueno bueno no seras tu un Romeo ajajja ");
+					System.out.println(" Veamos como te desenvuelves con mi test romantico ");
+					System.out.println();
+					preguntasRomanticas();
+
+				}
+
+				else if(ejecutar.equals("3")) {
+
+
+					System.out.println(" Veo que eres un niño bueno ");
+					System.out.println(" no te voy a poner en muchos aprietes te hare unas preguntas faciles ");
+					System.out.println();
+					preguntasComunes();
+
+
+				}
+
+				else if(ejecutar.equals("4")) {
+
+
+					System.out.println("Tranquilo fiera ");
+					System.out.println("Veamos si mereces la pena tanto como haces ver . Que yo creo que la cultura no va a ser lo tuyo ajjaaj");
+					System.out.println();
+					testCulturaGeneral();
+
+				}
+
+				else {
+
+					System.out.println(" No voy a perder mi tiempo contigo.");
+					salir = true;
+
+				}
+
+				if(salir == false) {
+
+					System.out.println(" Parece que Natasha se siente agusto contigo . Como quieres actuar . ");
+
+					System.out.println(" \nComo quiere reaccionar : \n\t[1] Tomar una actitud mas cariñosa con Natasha . \t\t\t[2] Sentirte incomodo por la cercania de Natasha ."
+							+ " \n\t[3] Besarla apasionadamente ."
+							+ "\t\t[4] Proponerle iros a tomar la ultima a casa ");
+
+					ejecutar = scanner.nextLine();
+
+					if(ejecutar.equals("1")) {
+
+						System.out.println(" Bueno parece que podemos empezar a tener quimica ");
+						System.out.println(" Veamos tu opinion acerca de la vida en pareja ");
+						System.out.println();
+						preguntasRomanticas();
+					}
+
+					else if(ejecutar.equals("2")) {
+
+						System.out.println(" Tranquilo que no muerdo ");
+						System.out.println(" Cuentame algo mas sobre ti ");
+						System.out.println();
+						preguntasComunes();
+
+					}
+
+					else if(ejecutar.equals("3")) {
+
+						System.out.println("Bueno parece que la cosa se pone interesante ");
+						System.out.println(" Quiero saber mas acerca de tus gustos mas intimos ");
+						System.out.println();
+						preguntasPicantes();
+
+
+					}
+
+					else if(ejecutar.equals("4")) {
+
+
+						System.out.println(" Vas un poco lanzado tu ");
+						System.out.println(" Si quieres que me vaya contigo tendras que ganartelo");
+						System.out.println(" Has conseguido llamar mi atencion y hacerme sentir comoda pero veamos como te desenvuelves en el campo intelectual");
+						System.out.println();
+						testCulturaGeneral();
+
+					}
+
+					else {
+
+						System.out.println(" No voy a perder mi tiempo contigo. ");
+						salir = true;
+
+					}	
+
+				}
+				
+				if(contador <= 0) {
+					
+					System.out.println(" Tu cita no merece ni ser comentada .");
+					System.out.println(" PD :No estaria mal que revisases que son los numeros .");
+				}
+
+				else if(contador < 6){
+
+					System.out.println("la cita ha sido un desastre Natasha no te da ni su insta \n tu nota ha sido : 3/10.");
+				}
+
+				else if(contador < 10) {
+
+					System.out.println(" Natasha ha quedado sorpendida pero no precisamente para bien que quiera volver a verte esta complicado \n "
+							+ "tu nota ha sido : 5/10");
+				}
+
+				else if(contador < 14) {
+
+					System.out.println( " No ha sido la cita de su vida pero Natasha se plantea volver a verte \n tu nota ha sido : 7/10");
+				}
+
+				else if(contador < 17) {
+					
+					System.out.println("Has superado con creces las expectativas de Natasha estaria encantada en seguir conociendote \n tu nota ha sido : 9/10");
+
+				}
+				
+				else if(contador == 20) {
+					
+					
+					System.out.println("Natasha no sabe ni que decir llevaba soñando con alguien como tu toda su vida \n su nota ha sido: 10/10");
+				}
+
+
+
+				else if ( ejecutar.equals("2")) {
+
+					System.out.println("Gracias por utilizar el programa");
+
+					ejecucion = false;
+
+				}
+
+				else {
+
+					System.out.println("opcion no disponible. Introduzca una correcta.");
+				}
+			}
+		}		
 	}
+	
 	static void testCulturaGeneral() {
 
 		System.out.println(" ¿ Como se llama la capital de Mongolia ? ");
@@ -400,17 +574,6 @@ public class PracticaEntornos {
 			contador -=5;
 		}
 	}
-}
-
-public class PracticaEntornos {
-
-	public static void main(String[] args) {
-
-		
-
-		
-
-	}
 	
 	static void cabecera() {
 
@@ -799,7 +962,7 @@ public class PracticaEntornos {
 		else {
 
 			contador -=5;
-		}
-	}
-	
+		}	
+
+	}	
 }
